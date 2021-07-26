@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class Calculadora {
 
     // Declaração de variáveis de classe
-    static int soma;
-    static int subtracao;
-    static int multiplicacao;
-    static int divisao;
-    static int x;
-    static int y;
+    int soma;
+    int subtracao;
+    int multiplicacao;
+    int divisao;
+    int x;
+    int y;
     
-    public static void soma() {
+    public void soma() {
         // Processamento 
         soma = x + y;
 
@@ -22,8 +22,15 @@ public class Calculadora {
         System.out.println("A soma do metodo igual a: " + soma);
 
     } // End of soma method
-
-    public static void subtracao() {
+    
+    public  int soma(int x, int y){
+    // Declaração de variáveis
+    int soma = x + y;
+    
+        //System.out.println("[Método soma com parâmetros] Soma = " + soma);
+        return soma;
+    } // End of method Soma 2
+    public  void subtracao() {
 
         // Processamento 
         subtracao = x - y;
@@ -33,7 +40,7 @@ public class Calculadora {
 
     } // End of method subtracao
 
-    public static void multiplicacao() {
+    public  void multiplicacao() {
 
         // Processamento 
         multiplicacao = x * y;
@@ -42,7 +49,7 @@ public class Calculadora {
         System.out.println("A multiplicação do metodo igual a: " + multiplicacao);
     } // End of method multiplicacao
 
-    public static void divisao() {
+    public void divisao() {
 
         // Processamento 
         divisao = x / y;
